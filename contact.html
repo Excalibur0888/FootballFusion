@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+		<meta name="description" content="Contact us for any queries or support. We're here to help you with your fantasy football experience.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - FootballFusion</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><h2>FootballFusion</h2></a>
+        </div>
+        <nav>
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="rules.html" class="btn-primary">Rules</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Get in Touch</h1>
+        <p>with our team for any queries or support</p>
+      </div>
+    </section>
+
+    <section class="contact-content">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="thanks_form.php" method="post" id="contactForm">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group checkbox-group">
+                <input type="checkbox" id="privacy-agreement" name="privacy-agreement" required />
+                <label for="privacy-agreement">I agree with <a href="privacy-policy.html">Privacy Policy</a></label>
+              </div>
+              <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+          </div>
+          <div class="contact-info">
+            <h2>Contact Information</h2>
+            <div class="info-item">
+              <div class="info-icon">
+                <img src="images/location.svg" alt="Location Icon" />
+              </div>
+              <div class="info-content">
+                <h3>Our Office</h3>
+                <p>
+                  <a
+                    href="https://maps.app.goo.gl/uV7NPVC7VX6Vs6gL7"
+                    target="_blank"
+                    >Kanjhawala Industrial Area, Kanjhawala Village, Delhi,
+                    110081, India</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">
+                <img src="images/phone.svg" alt="Phone Icon" />
+              </div>
+              <div class="info-content">
+                <h3>Phone</h3>
+                <p><a href="tel:+918012345678">+91 80 1234 5678</a></p>
+                <p>Monday to Friday, 9am to 6pm IST</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">
+                <img src="images/email.svg" alt="Email Icon" />
+              </div>
+              <div class="info-content">
+                <h3>Email</h3>
+                <p>
+                  <a href="mailto:contact@footballfusion.com"
+                    >contact@footballfusion.com</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Can I create multiple teams for the same match?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes! You can create up to 3 different team combinations for the same match. 
+                This gives you more chances to win and lets you try different strategies with 
+                various player combinations.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What happens if a match gets cancelled or postponed?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                If a match is cancelled or postponed, all contests related to that match will 
+                be automatically voided and entry fees will be refunded to your account within 
+                24 hours. Your team selections will remain saved for when the match is rescheduled.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Do substitutes earn points for my team?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, if your selected player is substituted during a match, you'll earn points 
+                for both the starting player and their substitute proportional to their playing 
+                time. This makes team selection even more strategic!
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Can I join private leagues from different time zones?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Absolutely! Our platform automatically adjusts all deadlines and match times to 
+                your local time zone. You can compete with friends from anywhere in the world 
+                without worrying about time differences or missing team submission deadlines.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map">
+      <div class="container">
+        <h2 class="section-title">Find Us</h2>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d951.3061962379059!2d77.00401721839802!3d28.722215163375882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d089eab72c50b%3A0x2281180949920456!2zNDgwLCBLYW5qaGF3YWxhIEluZHVzdHJpYWwgQXJlYSwgS2Fuamhhd2FsYSBWaWxsYWdlLCBEZWxoaSwgMTEwMDgxLCDQmNC90LTQuNGP!5e1!3m2!1sru!2sru!4v1741456651084!5m2!1sru!2sru"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>Ready to Join FootballFusion?</h2>
+        <p>
+          Create your account today and start your fantasy football journey!
+        </p>
+        <a href="rules.html" class="btn-primary">View Rules</a>
+      </div>
+    </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="index.html"><h2>FootballFusion</h2></a>
+            <p>Your Ultimate Fantasy<br/> Football Experience</p>
+          </div>
+          <div class="footer-links">
+            <div class="link-group">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="link-group">
+              <h3>Legal</h3>
+              <ul>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                <li><a href="rules.html">Game Rules</a></li>
+              </ul>
+            </div>
+            <div class="link-group">
+              <h3>Connect</h3>
+              <ul class="social-links">
+                <li><a href="contact.html">Facebook</a></li>
+                <li><a href="contact.html">Twitter</a></li>
+                <li><a href="contact.html">Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-badges">
+            <a href="https://www.gamcare.org.uk/" target="_blank"
+              ><img src="images/6.png" alt="Gamcare"
+            /></a>
+            <img src="images/18.png" alt="18+" />
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 FootballFusion. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

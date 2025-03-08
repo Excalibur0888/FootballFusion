@@ -1,0 +1,357 @@
+/* 
+* Premier Fantasy Football - Responsive Stylesheet
+* Author: Premier Fantasy Team
+* Version: 1.0
+*/
+
+/* ===== RESPONSIVE STYLES ===== */
+
+/* Large Devices (Desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .about-grid,
+    .contact-grid {
+        gap: 30px;
+    }
+}
+
+/* Medium Devices (Tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .hero .container {
+        flex-direction: column;
+    }
+    
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+		.hero-content h1 {
+			font-size: 2.5rem;
+		}
+    
+    .cta-buttons {
+        justify-content: center;
+    }
+    
+    .steps {
+        flex-direction: column;
+    }
+    
+    .step {
+        margin-bottom: 20px;
+    }
+    
+    .mission-vision-grid {
+        flex-direction: column;
+    }
+    
+    .mission, .vision {
+        margin-bottom: 20px;
+    }
+    
+    .about-grid {
+        flex-direction: column;
+    }
+    
+    .about-image {
+        order: 1;
+    }
+    
+    .about-text {
+        order: 2;
+    }
+    
+    .contact-grid {
+        flex-direction: column;
+    }
+    
+    .contact-form {
+        margin-bottom: 40px;
+    }
+    
+    .rules-content .container,
+    .legal-content .container {
+        flex-direction: column;
+    }
+    
+    .rules-nav,
+    .legal-nav {
+        flex: 0 0 100%;
+        position: static;
+        margin-bottom: 30px;
+    }
+    
+    .rules-nav ul,
+    .legal-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .rules-nav ul li,
+    .legal-nav ul li {
+        margin-bottom: 10px;
+    }
+    
+    .rules-nav ul li a,
+    .legal-nav ul li a {
+        padding: 8px 15px;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        display: inline-block;
+    }
+    
+    .app-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .app-text {
+        margin-bottom: 30px;
+    }
+}
+
+/* Small Devices (Landscape Phones, less than 768px) */
+@media (max-width: 767.98px) {
+    header .container {
+        position: relative;
+    }
+    
+    .menu-toggle {
+        display: flex;
+    }
+    
+    nav .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        display: none;
+        z-index: 1000;
+    }
+    
+    nav .nav-menu.active {
+        display: flex;
+    }
+    
+    nav .nav-menu li {
+        margin: 0 0 15px 0;
+        width: 100%;
+    }
+    
+    nav .nav-menu li:last-child {
+        margin-bottom: 0;
+    }
+    
+    nav .nav-menu li a {
+        display: block;
+        padding: 8px;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .testimonial {
+        flex: 0 0 100%;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .footer-logo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+    }
+    
+    .link-group {
+        flex: 0 0 100%;
+        text-align: center;
+    }
+    
+    .link-group h3:after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .footer-badges {
+        margin-top: 20px;
+        justify-content: center;
+    }
+    
+    .feature-grid,
+    .team-grid,
+    .values-grid,
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .rule-content {
+        padding-left: 0;
+    }
+    
+    .timeline-container::after {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 50px;
+    }
+    
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-dot,
+    .timeline-item:nth-child(even) .timeline-dot {
+        left: 10px;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-date,
+    .timeline-item:nth-child(even) .timeline-date {
+        left: auto;
+        right: auto;
+        top: -30px;
+        position: relative;
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* Extra Small Devices (Portrait Phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .cta h2 {
+        font-size: 1.8rem;
+    }
+    
+    .testimonial-author {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .testimonial-author img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .page-header p {
+        font-size: 1rem;
+    }
+    
+    .about-text h2,
+    .contact-form h2,
+    .contact-info h2,
+    .rule-section h2,
+    .legal-section h2 {
+        font-size: 1.6rem;
+    }
+    
+    .rule-content h3,
+    .legal-section h3 {
+        font-size: 1.3rem;
+    }
+    
+    .rules-table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .social-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .social-links li {
+        margin-bottom: 5px;
+    }
+    
+    .footer-bottom {
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    .stats-grid,
+    .players-grid,
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tabs-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tab-btn {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    
+    .rules-card-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .scoring-tables {
+        grid-template-columns: 1fr;
+    }
+    
+    .rules-testimonial {
+        flex: 0 0 100%;
+    }
+    
+    .partners-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
