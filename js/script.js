@@ -7,6 +7,18 @@
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     
+    // Update news dates to today's date
+    const newsDateElements = document.querySelectorAll('[data-news-date]');
+    if (newsDateElements.length > 0) {
+        const today = new Date();
+        const options = { month: 'long', day: 'numeric', year: 'numeric' };
+        const formattedDate = today.toLocaleDateString('en-US', options);
+        
+        newsDateElements.forEach(dateElement => {
+            dateElement.textContent = formattedDate;
+        });
+    }
+    
     // Mobile Menu Toggle
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
